@@ -1,0 +1,141 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+/*Navigation Bar Start*/
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.nav-bar{
+	text-align: center;
+	background-color: #202020;
+	box-shadow: 1px 1px 10px black;
+}
+.nav-bar ul{
+	display: flex;	
+}
+.nav-bar ul li{
+	height: 55px;
+	width: 175px;
+	line-height: 55px;	
+}
+.logo{
+	color: white;
+	font-size: 30px;
+	font-family: 'Abril Fatface', cursive;
+	font-family: 'Great Vibes', cursive;
+}
+.nav-bar ul li a{
+	color: #FEA500;
+	font-size: 15px;
+	display: block;
+}
+.nav-bar ul li:hover:not(.logo){
+	background-color: white;
+}
+.nav-bar ul li a:hover{
+	color: black;
+	font-weight: bold;
+}
+.nav-bar ul li a:focus{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+}
+.dropdown ul li{
+	/*border: 1px solid white;*/
+	box-shadow: 1px 1px 7px white;
+}
+/*Navigation Bar End*/
+/*Project Dropdown Start*/
+.dropdown{
+	display: none;
+}
+.nav-bar ul li:hover .dropdown{
+	display: block;
+}
+.nav-bar ul li:hover .dropdown ul{
+	display: block;
+	background-color: black;
+}
+/*Project Dropdown End*/
+/*Project Sub Dropdown Start*/
+.project3{
+	position: relative;
+}
+.sub{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 175px;
+}
+.project3:hover .sub{
+	display: block;
+}
+/*Project Sub Dropdown End*/
+/*Banner Div Start*/	
+.banner{
+	background: url(../images/08.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 580px;
+	position: relative;
+}
+/*Main Form Start*/
+.main-form{
+	height: 350px;
+	width: 500px;
+	border-radius: 20px;
+	background: rgba(0,0,0,.4);
+	position: absolute;
+	top: 130px;
+	left: 440px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 30px black;
+}
+.main-form form input{
+	height: 30px;
+	width: 250px;
+	padding-left: 8px;
+	background: transparent;
+	border: none;
+	outline: 0;
+	border-bottom: 1px solid white;
+	color: white;
+}
+.main-form form input::placeholder{
+	color: white;
+	font-size: 15px;
+}
+.main-form form label{
+	color: white;
+	margin-right: 15px;
+}
+.main-form form button{
+	margin-left: 40px;
+	text-align: center;
+	padding: 7px 70px;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	/*background: linear-gradient(orange, white, orange);*/
+	background-color: #FEA500;
+}
+.main-form form h2{
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+}
+/*Main Form End*/
+/*Banner Div End*/	
